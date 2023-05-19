@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{595DCE98-3903-AD2F-A413-89EBDE590EE6}</ProjectGuid>
+    <ProjectGuid>{CCFCB9CB-5315-E77E-499A-57FD13FFA277}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>SUNNYFramework.RunTime</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -48,7 +48,7 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2021.3.16f1c1</UnityVersion>
   </PropertyGroup>
@@ -56,297 +56,8 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SUNNYFramework\RunTime\UI\Base\UILogicResident.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Attribute\CustomDebuggerAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\CameraControl\CameraTarget.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerCapsuleCollider.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\AspectTrack\AspectTrackManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\UI\Attribute\UIResourceAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventTaskEnd.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\Base\DataModelBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Helper\DefaultDebugHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\Helper\DefaultECSHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Debugger\DebuggerScene.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\CameraControl\MouseRayUITarget.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\Attribute\StarComponentAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Debugger\Debugger.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerAudioManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Entity\Helper\IEntityHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\Helper\DefaultControllerHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Resource\Info\PrefabInfo.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerSkinnedMeshRenderer.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Base\StepParameter.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Procedure\Helper\DefaultProcedureHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Partial\StepOperationPartial.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerControllerManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\UI\UIClickButton.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Helper\ITaskMasterHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\SafetyCheck\ISafetyCheckTarget.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\Base\IModuleManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\UI\UIDragObject.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\ControllerManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Coroutiner\YieldInstructioner.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\FSM\Base\FSMDataBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Base\TaskTarget.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\ReflectionToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventException.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\AspectTrack\Base\AspectProxyBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\WebRequest\WebInterface\WebInterfaceGetTexture2D.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\Helper\IMainHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\UI\UIPressButton.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\MainPartial.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerToggle.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerRectTransform.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\DataBinding\BindableBool.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Helper\DefaultEventHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerCharacterController.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\DataSet\Base\DataSetBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventPauseGame.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\UI\UIDragTarget.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerMeshFilter.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\DataBinding\BindableType.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Entity\EntityManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\TaskMaster.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Attribute\RemarkAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\Component\ECS_Component.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\Attribute\SystemNameAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Base\StepContentAsset.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\Highlighting\HighlightableObject.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\Attribute\InjectUIAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\FSM\Base\FiniteStateBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\Main.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\Parameter\MainParameter.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Attribute\TaskContentAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerImage.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Exception\ExceptionManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventUIClosed.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\Helper\IControllerHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\System\ECS_System.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Entity\Helper\DefaultEntityHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\WebRequest\WebRequestManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\Attribute\InternalModuleAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\Highlighting\HighlightingEffect.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Procedure\ProcedureManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Recorder\Base\Recorder.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\LitJson\JsonMockWrapper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Recorder\Base\PropertyRecorder.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\UITwinkleToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\AspectTrack\Helper\IAspectTrackHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerMain.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Recorder\RectTransformRecorder.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ObjectPool\Helper\ObjectSpawnPool.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\UIToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\DebugManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Input\Helper\DefaultInputHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Hotfix\HotfixManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Modules\DOTweenModuleUI.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\DataBinding\BindableInt.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventTaskPointStart.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ReferencePool\Base\IReference.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Audio\AudioManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\WebRequest\Base\WebInterfaceBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Input\StandardInputDevice.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Behaviour\IUpdateSecond.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\CustomModule\Helper\ICustomModuleHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ReferencePool\Helper\IReferencePoolHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerText.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\UI\Helper\DefaultUIHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\UI\World\UIWorldDomain.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Base\TaskDepend.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\HighlightableToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Entity\Attribute\EntityResourceAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\DataSet\Helper\IDataSetHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Entity\Base\EntityLogicBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Audio\Helper\IAudioHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\WebRequest\WebInterface\WebInterfaceGetString.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\CameraControl\MousePosition.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Base\TaskGameObject.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\FSM\Helper\IFSMHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\GameObject\DragObject.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\StringToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Base\TaskGameObjects.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\LitJson\JsonMapper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Hotfix\Helper\IHotfixHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Debugger\DebuggerComponentBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Base\TaskContentBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Input\Helper\IInputHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\UI\UIManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Debugger\DebuggerGameObject.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\CameraControl\RepelBox.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Base\StepContent.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Procedure\Base\ProcedureBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\UI\UIAnimation.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventHotfixReady.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\Base\InternalModuleBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Exception\EmailSender.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\AudioToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Modules\DOTweenModuleAudio.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Attribute\LockTransformAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Default\TaskPointDefault.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Modules\DOTweenModuleSprite.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Helper\IStepMasterHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\LitJson\JsonReader.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Attribute\InspectorAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Hotfix\HotfixBasicEnvironment.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\UI\Helper\IUIHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\FSM\FSM.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerRigidbody.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Attribute\TaskPointAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Base\TaskContentAsset.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Base\StepOperation.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Network\TcpChannel.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\SafetyCheck\SafetyChecker.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\CameraControl\MouseRayTarget.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ObjectPool\Helper\IObjectPoolHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\FSM\Attribute\FiniteStateNameAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Resource\Helper\DefaultResourceHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Exception\Helper\IExceptionHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\JsonToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Default\TaskContentDefault.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Modules\DOTweenModuleUtils.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerSlider.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\DataBinding\BindableFloat.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\UI\Base\UILogicTemporary.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\FSM\Helper\DefaultFSMHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Coroutiner\CoroutinerManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Hotfix\HotfixObject.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Base\StepPreview.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\CustomModule\CustomModuleManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\MathfToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Exception\Helper\DefaultExceptionHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerAudioSource.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ReferencePool\Helper\DefaultReferencePoolHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Network\TcpNetworkInfo.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerInputField.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\WebRequest\Helper\IWebRequestHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerProcedureManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\AspectTrack\Helper\DefaultAspectTrackHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventTaskBegin.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\Attribute\ComponentNameAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\MeshOutlineToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Ini\INIParser.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\Attribute\DataBindingAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerRawImage.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventTaskContentStart.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\CameraControl\MouseRotation.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\FSM\FSMManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Input\Base\InputDeviceBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Resource\Info\SceneInfo.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\DataSet\Helper\DefaultDataSetHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\EventManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Network\Base\INetworkMessage.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Helper\MonitorData.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Base\StepHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Hotfix\Helper\DefaultHotfixHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\CustomModule\Base\CustomModuleBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerWebRequestManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Resource\ResourceManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Base\StepTarget.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Network\UdpNetworkInfo.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\Log.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Attribute\RunTimeAssemblyAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\LitJson\JsonData.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\Base\IInternalModuleHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventCreateEntitySucceed.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Helper\IEventHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ObjectPool\Helper\DefaultObjectPoolHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\DataBinding\BindableSelectable.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\Helper\IECSHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Singleton\SingletonBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Coroutiner\Helper\ICoroutinerHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Resource\Helper\IResourceHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerBoxCollider.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerEntityManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\ECSManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\UI\UIEnterButton.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\CameraControl\MouseRayTargetBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\MeshOutline\MeshOutlineObject.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\CustomModule\Attribute\CustomModuleAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerParticleSystem.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerMeshRenderer.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\EventToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerLight.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Behaviour\SJBehaviour.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Network\UdpChannel.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\AutomaticTask.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Audio\Helper\DefaultAudioHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\WebRequest\WebInterface\WebInterfaceDownloadFile.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Exception\Info\SUNNYFrameworkException.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerAnimator.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Attribute\SceneHandlerAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Network\Helper\INetworkHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Hotfix\HotfixProcedureBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerUIManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerButton.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\LitJson\IJsonWrapper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\GlobalTools.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\FSM\Base\FSMArgsBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ReferencePool\Helper\ReferenceSpawnPool.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Controller\CameraControl\MouseRay.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\DelayToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Base\EventHandlerBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ObjectPool\ObjectPoolManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\Order\ECS_Order.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerTextMesh.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Resource\Info\AssetInfo.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Main\Base\LicenserBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventResumeGame.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\UI\Base\UILogicBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\LitJson\JsonException.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ECS\Entity\ECS_Entity.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Recorder\TransformRecorder.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\LitJson\Lexer.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\Attribute\InjectPathAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\DataSet\DataSetManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerTransform.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventTaskContentComplete.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Attribute\CustomHelperAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\LitJson\JsonWriter.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\CustomModule\Helper\DefaultCustomModuleHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Toolkit\PathToolkit.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Modules\DOTweenModulePhysics.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\WebRequest\Helper\DefaultWebRequestHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Network\NetworkManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Resource\Info\DataSetInfo.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Hotfix\Attribute\HotfixMethodAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerAspectTracker.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Resource\Base\ResourceInfoBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\Base\StepWired.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\WebRequest\WebInterface\WebInterfaceGetAudioClip.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\DataBinding\IDataDriver.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventTaskPointComplete.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerSphereCollider.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Event\Events\EventUIOpened.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Singleton\SingletonBehaviourBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Input\InputManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\ReferencePool\ReferencePoolManager.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\StepMaster\StepMaster.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\TaskMaster\Base\TaskPointBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Coroutiner\Helper\DefaultCoroutinerHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\WebRequest\WebInterface\WebInterfacePost.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Network\Helper\DefaultNetworkHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\LitJson\ParserToken.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Component\DebuggerCamera.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Modules\DOTweenModulePhysics2D.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Exception\Info\ExceptionInfo.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Debugger\DebuggerConsoleLog.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Debug\Helper\IDebugHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\Behaviour\IUpdateFrame.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Hotfix\Attribute\HotfixProcedureStateAttribute.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Procedure\Helper\IProcedureHelper.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Network\Base\ProtocolChannelBase.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\AspectTrack\Base\IAspectTrackObject.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\AutomaticTask\DataBinding\BindableString.cs" />
-    <Compile Include="Assets\SUNNYFramework\RunTime\Utility\GameObject\GameObjectAnimation.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Editor\DOTweenEditor.dll" />
-    <None Include="Assets\SUNNYFramework\RunTime\SUNNYFramework.RunTime.asmdef" />
-    <None Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\Editor\DOTweenEditor.XML" />
-    <None Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\DOTween.XML" />
-    <None Include="Assets\SUNNYFramework\RunTime\BuiltinTools\DOTween\DOTween.dll" />
+    <Compile Include="Assets\Editor\BuildTool.cs" />
+    <Compile Include="Assets\Editor\DefineSymbolUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -373,8 +84,17 @@
     <Reference Include="UnityEngine.AudioModule">
       <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.AutoStreamingModule">
+      <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AutoStreamingModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
@@ -417,6 +137,9 @@
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
       <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.NVIDIAModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
       <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
@@ -538,6 +261,9 @@
     <Reference Include="UnityEngine.VideoModule">
       <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
     </Reference>
@@ -633,6 +359,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -1015,14 +744,104 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>D:\Program Files\Unity\2021.3.16f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{AE2714B5-C1C6-41FC-7FD4-675051F72876}</Project>
+      <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="SUNNYFramework.Editor.csproj">
+      <Project>{FD01D495-06CD-0D43-006F-4A5240DD669C}</Project>
+      <Name>SUNNYFramework.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SUNNYFramework.RunTime.csproj">
+      <Project>{595DCE98-3903-AD2F-A413-89EBDE590EE6}</Project>
+      <Name>SUNNYFramework.RunTime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

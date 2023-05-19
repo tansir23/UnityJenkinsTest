@@ -1,0 +1,7 @@
+
+[submodule "Assets/SUNNYFramework"]
+	path = Assets/SUNNYFramework
+	url = git@github.com:tansir23/SUNNYFramework.git
+[submodule "Assets/SUNNYFrameworkDemo"]
+	path = Assets/SUNNYFrameworkDemo
+	url = git@github.com:tansir23/SUNNYFrameworkDemo.git

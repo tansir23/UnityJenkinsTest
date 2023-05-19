@@ -198,5 +198,9 @@ PrefabInstance:
       propertyPath: ActivatedProcedures.Array.data[0]
       value: SUNNY.Framework.Demo.UITestProcedure
       objectReference: {fileID: 0}
+    - target: {fileID: 114872231495406314, guid: d09e5ea50d2aa0841ab072ac17fbd207, type: 3}
+      propertyPath: IsAllowSceneAddBuild
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d09e5ea50d2aa0841ab072ac17fbd207, type: 3}
